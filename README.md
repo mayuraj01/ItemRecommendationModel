@@ -24,9 +24,9 @@ It suggests visually similar fashion items when you upload a product image.
       └── README.md # Project documentation
 
 ## Create a virtual environment:
-  - python -m venv venv
-  - source venv/bin/activate  # On Linux/Mac
-  - venv\Scripts\activate     # On Windows
+        python -m venv venv
+        source venv/bin/activate  # On Linux/Mac
+        venv\Scripts\activate     # On Windows
 
 ## 📦 Dependencies
 Python,
