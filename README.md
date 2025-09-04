@@ -24,9 +24,9 @@ It suggests visually similar fashion items when you upload a product image.
       └── README.md # Project documentation
 
 ## Create a virtual environment:
-  python -m venv venv
-  source venv/bin/activate  # On Linux/Mac
-  venv\Scripts\activate     # On Windows
+  - python -m venv venv
+  - source venv/bin/activate  # On Linux/Mac
+  - venv\Scripts\activate     # On Windows
 
 ## 📦 Dependencies
 Python,
@@ -37,7 +37,7 @@ Streamlit,
 Pillow
 
 Install via:
-  pip install tensorflow numpy scikit-learn streamlit pillow
+  - pip install tensorflow numpy scikit-learn streamlit pillow
 
 ## 🛠 Usage
 Step 1: Extract Features
