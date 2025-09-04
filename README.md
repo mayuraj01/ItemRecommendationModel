@@ -1,17 +1,65 @@
-# ItemRecommendationModel
-This project demonstrates a Fashion Recommendation System that suggests similar fashion images based on a selected input image. It leverages ResNet50, a powerful convolutional neural network (CNN), for feature extraction and utilizes the Nearest Neighbors algorithm to find and display the most visually similar images.
+# 👗 Fashion Recommendation System
 
-# Features
-Deep Learning-Based Feature Extraction: Uses a pre-trained ResNet50 model with weights trained on ImageNet to extract meaningful features from images.
-Efficient Similarity Search: Implements a Nearest Neighbors model with the Euclidean distance metric to retrieve similar images quickly and accurately.
-Image Preprocessing: Handles resizing, normalization, and preprocessing of images for optimal performance with the ResNet50 model.
-Visualization: Displays the recommended images in a clear, user-friendly layout using Matplotlib.
+This project is an **AI-powered Fashion Recommender** built with **TensorFlow, Scikit-learn, and Streamlit**.  
+It suggests visually similar fashion items when you upload a product image.
 
-# Technologies Used
+---
+
+## 🚀 Features
+- Extracts image embeddings using **ResNet50 (ImageNet pretrained)**.
+- Stores extracted features for fast similarity search.
+- Uses **K-Nearest Neighbors (KNN)** with **cosine similarity** for recommendations.
+- Simple **Streamlit UI** to upload an image and view recommended items.
+- Easily extendable with other models like **EfficientNet, MobileNet, or VGG16** for better accuracy.
+
+---
+
+## 📂 Project Structure
+      ├── images/ # Dataset of product images
+      ├── upload/ # Uploaded images via Streamlit
+      ├── recom-model.py # Feature extraction & feature dump script
+      ├── app.py # Streamlit app for recommendations
+      ├── Images_features.pkl # Pickled feature embeddings (generated)
+      ├── filesnames.pkl # Pickled list of image filenames
+      └── README.md # Project documentation
+
+Create a virtual environment:
+  python -m venv venv
+  source venv/bin/activate  # On Linux/Mac
+  venv\Scripts\activate     # On Windows
+
+##📦 Dependencies
 Python
-TensorFlow/Keras: For deep learning and feature extraction.
-Scikit-learn: For implementing Nearest Neighbors.
-OpenCV: For image preprocessing (via Keras utilities).
-Matplotlib: For visualizing recommended images.
-Pickle: For storing and loading image features and filenames.
+TensorFlow
+NumPy
+Scikit-learn
+Streamlit
+Pillow
+
+Install via:
+  pip install tensorflow numpy scikit-learn streamlit pillow
+
+##🛠 Usage
+Step 1: Extract Features
+
+Run the following to generate embeddings:
+python recom-model.py
+
+
+This will create:
+Images_features.pkl
+filesnames.pkl
+
+Step 2: Run the Streamlit App
+streamlit run app.py
+
+Step 3: Upload an Image
+Upload any fashion image (e.g., dress, shirt, shoes).
+
+The system will display top 5 most similar images from the dataset.
+
+Future Improvements:
+Use EfficientNet / MobileNet for better embeddings.
+Integrate DeepFashion Dataset for fine-tuning.
+Add user personalization (style-based recommendations).
 
