@@ -14,6 +14,9 @@ It suggests visually similar fashion items when you upload a product image.
 
 ---
 
+## Dataset
+- https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small
+
 ## 📂 Project Structure
       ├── images/ # Dataset of product images
       ├── upload/ # Uploaded images via Streamlit
