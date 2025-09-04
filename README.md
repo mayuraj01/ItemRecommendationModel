@@ -23,23 +23,23 @@ It suggests visually similar fashion items when you upload a product image.
       ├── filesnames.pkl # Pickled list of image filenames
       └── README.md # Project documentation
 
-Create a virtual environment:
+## Create a virtual environment:
   python -m venv venv
   source venv/bin/activate  # On Linux/Mac
   venv\Scripts\activate     # On Windows
 
-##📦 Dependencies
-Python
-TensorFlow
-NumPy
-Scikit-learn
-Streamlit
+## 📦 Dependencies
+Python,
+TensorFlow,
+NumPy,
+Scikit-learn,
+Streamlit,
 Pillow
 
 Install via:
   pip install tensorflow numpy scikit-learn streamlit pillow
 
-##🛠 Usage
+## 🛠 Usage
 Step 1: Extract Features
 
 Run the following to generate embeddings:
@@ -47,8 +47,8 @@ python recom-model.py
 
 
 This will create:
-Images_features.pkl
-filesnames.pkl
+- Images_features.pkl
+- filesnames.pkl
 
 Step 2: Run the Streamlit App
 streamlit run app.py
@@ -59,7 +59,7 @@ Upload any fashion image (e.g., dress, shirt, shoes).
 The system will display top 5 most similar images from the dataset.
 
 Future Improvements:
-Use EfficientNet / MobileNet for better embeddings.
-Integrate DeepFashion Dataset for fine-tuning.
-Add user personalization (style-based recommendations).
+- Use EfficientNet / MobileNet for better embeddings.
+- Integrate DeepFashion Dataset for fine-tuning.
+- Add user personalization (style-based recommendations).
 
